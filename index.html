@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice Generator</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <div id="header-text">
+                <h1>Invoice Generator</h1>
+                <p>Thanks for choosing GoodCorp LLC!</p>
+            </div>
+        </header>
+        <main>
+            <section id="add-services">
+                <div id="buttons">
+                    <button class="service-btn" id="wash">Wash Car: $10</button>
+                    <button class="service-btn" id="mow">Mow Lawn: $20</button>
+                    <button class="service-btn" id="weed">Pull Weeds: $30</button>
+                </div>
+                <div id="task-total">
+                    <p>TASK</p>
+                    <P>TOTAL</P>
+                </div>
+                <div id="selected-services">
+                </div>
+            </section>
+            <section id="total">
+                <div id="notes-total">
+                    <p>NOTES</p>
+                    <P>TOTAL AMOUNT</P>
+                </div>
+                <div id="total-amount"></div>
+                <button id="send-btn">Send invoice</button>
+            </section>
+        </main>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
